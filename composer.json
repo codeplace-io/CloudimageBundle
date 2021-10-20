@@ -1,0 +1,32 @@
+{
+    "name": "codeplace-io/cloudimage-bundle",
+    "type": "symfony-bundle",
+    "description": "cloudimage.io integration symfony bundle",
+    "keywords": [
+        "Symfony",
+        "Codeplace",
+        "Cloudimage.io"
+    ],
+    "homepage": "https://github.com/codeplace-io/CloudimageBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maciej Żukiewicz",
+            "email": "maciej.zukiewicz@codeplace.io"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4",
+        "symfony/framework-bundle": "^5.0"
+    },
+    "require-dev": {
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Codeplace\\CloudimageBundle\\": "src/"
+        }
+    }
+}
