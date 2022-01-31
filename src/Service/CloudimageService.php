@@ -25,8 +25,8 @@ final class CloudimageService
         }
 
         $uri = sprintf(
-            'https://%s.cloudimg.io/v7/%s/%s',
-            $this->token,
+            '%s%s/%s',
+            $this->getCloudimageBaseUrl(),
             $this->domain,
             ltrim($localUri, '/')
         );
@@ -38,6 +38,11 @@ final class CloudimageService
         }
 
         return $uri;
+    }
+
+    public function getCloudimageBaseUrl(): string
+    {
+        return sprintf('https://%s.cloudimg.io/v7/', $this->token);
     }
 
     protected function optionsToQueryString($options): ?string
